@@ -7,3 +7,17 @@
 	Note: This is custom css.
 
 **********************************************************************************/
+
+
+@font-face{
+	font-family: "bon-voyage";
+	src: url(/fonts/MADEBonVoyage-Thin.otf);
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: "hugolers";
+	src: url(/fonts/Hugolers_Stylish_Free.otf);
+	font-weight: normal;
+	font-style: normal;
+}
