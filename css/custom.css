@@ -8,16 +8,51 @@
 
 **********************************************************************************/
 
-
-@font-face{
-	font-family: "bon-voyage";
-	src: url(/fonts/MADEBonVoyage-Thin.otf);
-	font-weight: normal;
-	font-style: normal;
+@font-face {
+  font-family: "bon-voyage";
+  src: url(/fonts/MADEBonVoyage-Thin.otf);
+  font-weight: normal;
+  font-style: normal;
 }
-@font-face{
-	font-family: "hugolers";
-	src: url(/fonts/hugolers-stylish-regular.otf);
-	font-weight: normal;
-	font-style: normal;
+@font-face {
+  font-family: "hugolers";
+  src: url(/fonts/hugolers-stylish-regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media only screen and (max-width: 990px) {
+  #idk-wrap {
+    position: relative;
+    margin-bottom: 270px !important;
+  }
+
+  #image-idk {
+    background-image: none !important;
+  }
+
+  #lol-img {
+    background-image: none !important;
+    position: relative;
+  }
+
+  #thumb-arriba {
+    height: 250px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-image: url(/imagenes/frutillas.jpg);
+    background-size: cover;
+    z-index: 999;
+  }
+
+  #thumb-abajo {
+    height: 250px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-image: url(/imagenes/frambuesas.png);
+    background-size: cover;
+    z-index: 999;
+  }
 }
