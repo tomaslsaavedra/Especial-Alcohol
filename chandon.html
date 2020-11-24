@@ -8,6 +8,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="imagenes/logs/isologo png_Mesa de trabajo 1-04.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="imagenes/logs/isologo png_Mesa de trabajo 1-04.png">
@@ -163,7 +165,7 @@
                                     <div class="bkseparator--30"></div>
 
                                     <div class="view-more-btn heading-font wow move-up">
-                                        <a href="#" class="brook-btn bk-btn-theme btn-sd-size space-between" style="background-color: #D3E1FF;">Descubri como disfrutarlo</a>
+                                        <a href="#is_stuck_inner" class="brook-btn bk-btn-theme btn-sd-size space-between" style="background-color: #D3E1FF;">Descubri como disfrutarlo</a>
                                     </div>
 
                                 </div>
@@ -337,7 +339,7 @@
                             <div class="portfolio-main-info">
                                 <h3 class="heading heading-h3 line-height-1-42"><span style="font-family: hugolers;">Una copita de...</span></h3>
                                 <div class="portfolio-content mt--75 mb--75 mt_md--40 mb_md--40 mt_sm--40 mb_sm--40">
-                                    <h5 class="heading heading-h5">Champagne Fraise</h5>
+                                    <h4 class="heading heading-h4">Champagne Fraise</h4>
                                     <div class="desc mt--20">
                                         <p class="bk_pra" style="font-size: 16px;">Una refrescante preparación con un dulce sabor a frutilla. El toque que entrega esta fruta resulta ideal para disfrutar en una tarde de verano o bien antes de una comida.</p>
                                     </div>
@@ -526,7 +528,32 @@
     <script src="js/revolution.extension.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/revoulation.js"></script>
-
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
 </body>
 
 </html>
