@@ -34795,19 +34795,19 @@ header.br_header.header-default.header-fixed {
 
 .food-menu-wrap {
     margin-top: 63px;
-    padding-top: 52px;
+    padding-top: 20px;
     padding-right: 27px;
-    padding-bottom: 66px;
+    padding-bottom: px;
     padding-left: 27px;
     background-color: #faf7f4
 }
 
 .content-top {
-    margin-top: -177px !important;
+    margin-top: -220px !important;
     margin-bottom: 70px !important;
-    padding-top: 52px !important;
+    padding-top: 20px !important;
     padding-right: 27px !important;
-    padding-bottom: 66px !important;
+    padding-bottom: 15px !important;
     padding-left: 27px !important
 }
 
